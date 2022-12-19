@@ -1,0 +1,30 @@
+.home-top-image-container {
+  width: clamp(200px, 80vw, 1240px);
+}
+
+.home-top-image-container::before {
+  content: 'Chez vous, partout et ailleurs.';
+  display: block;
+  color: #fff;
+  position: absolute;
+  font-size: clamp(18px, 4vw, 48px);
+  margin: auto;
+  padding: 0 10px;
+}
+
+.home-top-image {
+  max-width: 100%;
+  object-fit: cover;
+  min-height: 110px;
+  border-radius: 10px;
+}
+
+.lodging-index-nav {
+  margin: 5% auto;
+}
+
+@media screen and (min-width: 768px) {
+  .lodging-index-nav {
+    margin: 2.5%;
+  }
+}

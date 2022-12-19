@@ -1,0 +1,39 @@
+.thumbnail-link,
+.thumbnail-image,
+.thumbnail-image-wrapper,
+.thumbnail-image-wrapper:before {
+  height: inherit;
+  border-radius: 10px;
+}
+
+.thumbnail-image-wrapper {
+}
+
+.thumbnail-image {
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+}
+
+.thumbnail-image-wrapper:before {
+  display: block;
+  content: '';
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  height: inherit;
+  width: 100%;
+}
+
+.thumbnail-title {
+  bottom: 0;
+  z-index: 2;
+  margin: 10px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 25.67px;
+}

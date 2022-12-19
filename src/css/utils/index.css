@@ -1,0 +1,189 @@
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.padding-2 {
+  padding: 2rem;
+}
+
+.padding-4 {
+  padding: 4rem;
+}
+
+.paddingx {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.paddingx-2 {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.paddingx-4 {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.margin-0-auto {
+  margin: 0 auto;
+}
+
+.margin-b {
+  margin-bottom: 1rem;
+}
+
+.margin-b-2 {
+  margin-bottom: 2rem;
+}
+
+.margin-t {
+  margin-top: 1rem;
+}
+
+.margin-t-2 {
+  margin-top: 2rem;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-around {
+  align-content: space-around;
+}
+
+.align-between {
+  align-content: space-between;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.nogap {
+  gap: 0;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.light-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.width-fit {
+  width: fit-content;
+}
+
+.b-radius {
+  border-radius: 1rem;
+}
+
+.b-radius-2 {
+  border-radius: 2rem;
+}
+
+.b-radius-4 {
+  border-radius: 4rem;
+}

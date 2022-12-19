@@ -1,0 +1,32 @@
+.thumbnail-list {
+  gap: clamp(20px, 5vw, 60px);
+  border-radius: 10px;
+  width: clamp(200px, 80vw, 1240px);
+  margin: auto;
+}
+
+.thumbnail-item {
+  width: clamp(200px, 20vw, 340px);
+  height: clamp(200px, 20vw, 340px);
+  transition: transform 500ms ease-out;
+  flex: auto;
+}
+
+.thumbnail-item:hover {
+  transform: scale(110%);
+}
+
+@media screen and (min-width: 768px) {
+  .thumbnail-list {
+    box-sizing: border-box;
+    background-color: #f6f6f6;
+    padding: clamp(20px, 3vw, 50px);
+    max-width: 1240px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .thumbnail-item {
+    flex: unset;
+  }
+}

@@ -1,0 +1,32 @@
+.active {
+  text-decoration: underline;
+}
+
+.page-header {
+  margin: auto;
+}
+
+.header-nav {
+  padding: clamp(10px, 5%, 40px) clamp(10px, 5%, 80px);
+}
+
+.nav-logo {
+  width: clamp(200px, 50%, 210px);
+}
+
+.nav-logo img {
+  width: 100%;
+}
+
+.nav-list-wrapper {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-list-item {
+  padding: 0px clamp(5px, 1.8vw, 20px);
+}
+
+.nav-links {
+  color: #ff6060;
+}

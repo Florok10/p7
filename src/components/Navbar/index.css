@@ -8,6 +8,7 @@
 
 .header-nav {
   padding: clamp(10px, 5%, 40px) clamp(10px, 5%, 80px);
+  max-width: 1920px;
 }
 
 .nav-logo {

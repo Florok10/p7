@@ -6,7 +6,7 @@ import './index.css';
 
 const Navbar = () => (
   <header className='page-header'>
-    <nav className='header-nav d-flex justify-between'>
+    <nav className='header-nav d-flex justify-between margin-auto'>
       <Link to='/' className='nav-logo'>
         <img src={logo} alt='Kasa logo' />
       </Link>

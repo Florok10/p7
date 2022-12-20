@@ -1,6 +1,6 @@
 .thumbnail-list {
   gap: clamp(20px, 5vw, 60px);
-  border-radius: 10px;
+  border-radius: 25px;
   width: clamp(200px, 80vw, 1240px);
   margin: auto;
 }

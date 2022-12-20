@@ -1,31 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import Picture from '../components/generic/Picture';
+import data from '../../data';
 
-const Lodging = ({ data }) => (
-  <section>
-    <Picture src={data.cover} />
-    <div></div>
-  </section>
-);
+import { useParams } from 'react-router-dom';
 
-Picture.propTypes = {
-  data: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    cover: PropTypes.string.isRequired,
-    pictures: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-    description: PropTypes.string.isRequired,
-    host: PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      picture: PropTypes.string.isRequired,
-    }).isRequired,
-    rating: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    equipments: PropTypes.arrayOf(PropTypes.string).isRequired,
-    tags: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-  }),
+const Lodging = () => {
+  const { id } = useParams();
+  const lodging = data.find((lod) => lod.id === id);
+  return (
+    <section>
+      <img alt={lodging.title} src={lodging.cover} />
+      <div>{lodging.description} </div>
+    </section>
+  );
 };
 
 export default Lodging;

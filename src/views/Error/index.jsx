@@ -1,5 +1,19 @@
 import React from 'react';
 
-const Error = () => <div>error 404</div>;
+import './index.css';
+
+const Error = () => (
+  <div className='padding'>
+    <div className='error-container d-flex flex-column align-center justify-center margin-b'>
+      <span className='error-code'>404</span>
+      <span className='error-message text-center'>
+        Oups! La page que vous demandez n'existe pas.
+      </span>
+    </div>
+    <a className='return-home-link d-block text-center' href='/'>
+      Retourner sur la page d'accueil
+    </a>
+  </div>
+);
 
 export default Error;

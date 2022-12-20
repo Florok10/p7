@@ -13,7 +13,7 @@ const LodgingThumbList = ({ data }) => (
           title={lodging.title}
           src={lodging.cover}
           alt={lodging.title}
-          href='/oui'
+          href={`${'/lodging/' + lodging.id}`}
         />
       </li>
     ))}

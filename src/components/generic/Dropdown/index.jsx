@@ -1,10 +1,9 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 const Dropdown = ({ dropDownClassName, title, list }) => (
   <ul className={`dropdown ${dropDownClassName}`}>
     <li className='dropdown-title'>{title}</li>
-    <li>
+    <li className='dropdown-content-container'>
       <ul className='dropdown-content-list'>
         {list.map((el) => (
           <li>

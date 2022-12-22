@@ -10,7 +10,7 @@ const Navbar = () => (
       <Link to='/' className='nav-logo'>
         <img src={logo} alt='Kasa logo' />
       </Link>
-      <ul className='nav-list-wrapper d-flex'>
+      <ul className='nav-list-wrapper d-flex align-center'>
         <li key='home' className='nav-list-item'>
           <NavLink
             to='/'

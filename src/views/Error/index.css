@@ -1,5 +1,6 @@
 .error-container {
   color: #ff6060;
+  margin-bottom: clamp(32px, 12vh, 100px);
 }
 
 .error-code {
@@ -8,7 +9,7 @@
 }
 
 .error-message {
-  font-size: clamp(22px, 3vw, 36px);
+  font-size: clamp(18px, 3vw, 36px);
 }
 
 .return-home-link {

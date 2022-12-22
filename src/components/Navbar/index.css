@@ -3,7 +3,7 @@
 }
 
 .page-header {
-  margin: auto;
+  flex-grow: 0.5;
 }
 
 .header-nav {
@@ -13,6 +13,7 @@
 
 .nav-logo {
   width: clamp(200px, 50%, 210px);
+  padding-right: 20px;
 }
 
 .nav-logo img {
@@ -26,6 +27,7 @@
 
 .nav-list-item {
   padding: 0px clamp(5px, 1.8vw, 20px);
+  height: fit-content;
 }
 
 .nav-links {

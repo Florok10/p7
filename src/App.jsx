@@ -13,7 +13,7 @@ import './App.css';
 const App = () => (
   <>
     <Navbar />
-    <main aria-roledescription='Contenu principal'>
+    <main aria-roledescription='Contenu principal' className='flex-auto'>
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/about' element={<About />} />

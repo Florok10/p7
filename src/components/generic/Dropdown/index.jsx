@@ -8,12 +8,15 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
   const [isTooltipVisible, setIsTooltipVisible] = useState(false);
 
   const handleKeyDown = (e) => {
-    if (e.keyCode === 9) return;
-    if (e.keyCode === 13) {
-      setIsOpen(!isOpen);
-      return;
+    switch (e.keyCode) {
+      case 9:
+        break;
+      case 13:
+        setIsOpen(!isOpen);
+        break;
+      default:
+        setIsTooltipVisible(true);
     }
-    setIsTooltipVisible(true);
   };
 
   useEffect(() => {
@@ -28,8 +31,8 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
     <div className='dropdown-container'>
       {isTooltipVisible && (
         <span>
-          Pour ouvrir un menu déroulant, pressez entrer en l'ayant focus ou
-          cliquer dessus.
+          Pour interragir avec un menu déroulant, pressez la touche "Entrer" en
+          l'ayant focus ou cliquer dessus.
         </span>
       )}
       <ul

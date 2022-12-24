@@ -14,17 +14,9 @@
 
 .home-top-image {
   max-width: 100%;
-  object-fit: fill;
   min-height: 110px;
   border-radius: 10px;
 }
 
-.lodging-index-nav {
-  margin: 5% auto;
-}
-
 @media screen and (min-width: 768px) {
-  .lodging-index-nav {
-    margin: 2.5%;
-  }
 }

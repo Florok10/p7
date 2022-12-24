@@ -7,7 +7,7 @@ import homeImage from '../../assets/home_top_image.png';
 
 const Home = () => (
   <>
-    <div className='home-top-image-container relative d-flex align-center justify-center margin-auto'>
+    <div className='home-top-image-container relative d-flex align-center justify-center'>
       <img
         className='home-top-image'
         src={homeImage}

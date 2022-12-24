@@ -6,7 +6,7 @@ import aboutImage from '../../assets/about_top_image.png';
 
 const About = () => (
   <>
-    <div className='about-top-image-container relative d-flex align-center justify-center margin-auto'>
+    <div className='about-top-image-container relative d-flex align-center justify-center'>
       <img
         className='about-top-image'
         src={aboutImage}

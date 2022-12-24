@@ -1,9 +1,25 @@
+.dropdown-container {
+  color: #ff6060;
+}
+
 .dropdown {
+  width: 100%;
 }
 
 .dropdown-title {
   cursor: pointer;
+  color: #fff;
+  background-color: #ff6060;
+  padding: 10px;
+  border-radius: 5px;
+  top: 6px;
 }
 
-.tooltop-active {
+.dropdown-content-container {
+  background: #f7f7f7;
+  border-radius: 5px;
+  padding: 20px 10px;
+}
+
+.dropdown-tooltip {
 }

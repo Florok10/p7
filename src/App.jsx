@@ -12,7 +12,10 @@ import './App.css';
 const App = () => (
   <>
     <Navbar />
-    <main aria-roledescription='Contenu principal' className='flex-auto'>
+    <main
+      aria-roledescription='Contenu principal'
+      className='d-flex flex-column justify-around align-center flex-auto'
+    >
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/about' element={<About />} />

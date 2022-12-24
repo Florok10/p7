@@ -4,7 +4,6 @@
 
 .about-top-image {
   max-width: 100%;
-  object-fit: fill;
   min-height: 110px;
   border-radius: 10px;
 }

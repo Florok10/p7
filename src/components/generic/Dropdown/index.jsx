@@ -28,9 +28,9 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
   }, [isTooltipVisible]);
 
   return (
-    <div className='dropdown-container'>
+    <div className='dropdown-container relative d-flex justify-center'>
       {isTooltipVisible && (
-        <span>
+        <span className='dropdown-tooltip absolute'>
           Pour interragir avec un menu déroulant, pressez la touche "Entrer" en
           l'ayant focus ou cliquer dessus.
         </span>
@@ -41,7 +41,7 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
         } ${dropDownClassName || ''}`}
       >
         <li
-          className='dropdown-title'
+          className='dropdown-title relative'
           onClick={() => setIsOpen(!isOpen)}
           onKeyDown={handleKeyDown}
           tabIndex='0'

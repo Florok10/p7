@@ -8,6 +8,8 @@ body {
 
 main {
   margin: 20px auto;
+  gap: 25px;
+  width: min-content;
 }
 
 #root {

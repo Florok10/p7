@@ -1,5 +1,7 @@
 import Dropdown from '../generic/Dropdown';
 
+import './index.css';
+
 const AboutDropdownList = () => {
   const dropdownProps = [
     {
@@ -40,7 +42,7 @@ const AboutDropdownList = () => {
     },
   ];
   return (
-    <ul className='dropdown-list'>
+    <ul className='dropdown-list d-flex flex-column align-center flex-auto'>
       {dropdownProps.map(({ title, list }) => (
         <li className='dropdown-list-item' key={title}>
           <Dropdown title={title} list={list} />

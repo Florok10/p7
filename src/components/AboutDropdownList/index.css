@@ -1,0 +1,9 @@
+.dropdown-list {
+  gap: 20px;
+  width: 100%;
+  max-width: 970px;
+}
+
+.dropdown-list-item {
+  width: 100%;
+}

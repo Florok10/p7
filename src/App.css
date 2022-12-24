@@ -6,6 +6,17 @@ body {
   margin: 0;
 }
 
+main {
+  margin: 20px auto;
+}
+
 #root {
   min-height: 100vh;
+}
+
+[tabindex='0']:focus,
+a:focus,
+button:focus {
+  outline: solid 3px rgb(75, 159, 255);
+  outline-offset: 4px;
 }

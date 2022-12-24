@@ -5,11 +5,11 @@ import './index.css';
 
 const Navbar = () => (
   <header className='page-header'>
-    <nav className='header-nav d-flex justify-between margin-auto'>
-      <Link to='/' className='nav-logo'>
+    <nav className='header-nav d-flex margin-auto'>
+      <Link to='/' className='nav-logo d-flex justify-center'>
         <img src={logo} alt='Kasa logo' />
       </Link>
-      <ul className='nav-list-wrapper d-flex align-center'>
+      <ul className='nav-list-wrapper d-flex align-center justify-center'>
         <li key='home' className='nav-list-item'>
           <NavLink
             to='/'

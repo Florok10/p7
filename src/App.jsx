@@ -1,5 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 
+import LodgingIdWrapper from './routes/LodgingIdWrapper';
+
 import About from './views/About';
 import Error from './views/Error';
 import Footer from './components/Footer';
@@ -19,7 +21,9 @@ const App = () => (
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/about' element={<About />} />
-        <Route exact path='/lodging/:id' element={<Lodging />} />
+        <Route element={<LodgingIdWrapper />}>
+          <Route exact path='/lodging/:id' element={<Lodging />} />
+        </Route>
         <Route path='*' element={<Error />} />
       </Routes>
     </main>

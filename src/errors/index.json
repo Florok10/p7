@@ -1,7 +1,0 @@
-[
-  { "code": "404", "message": "Oups! La page que vous demandez n'existe pas." },
-  {
-    "code": "500",
-    "message": "Oups! Une erreur interne s'est produite. Réessayez ou contactez le support."
-  }
-]

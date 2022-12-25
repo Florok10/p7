@@ -7,32 +7,31 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isTooltipVisible, setIsTooltipVisible] = useState(false);
 
+  const keysAccepted = [9, 13, 17, 18, 32];
+
   const handleKeyDown = (e) => {
-    switch (e.keyCode) {
-      case 9:
-        break;
-      case 13:
-        setIsOpen(!isOpen);
-        break;
-      default:
-        setIsTooltipVisible(true);
-    }
+    if (!keysAccepted.find((key) => key === e.keyCode))
+      return setIsTooltipVisible(true);
   };
 
   useEffect(() => {
     if (!isTooltipVisible) return;
     const timer = setTimeout(() => {
       setIsTooltipVisible(false);
-    }, 5000);
+    }, 8000);
     return () => clearTimeout(timer);
   }, [isTooltipVisible]);
 
   return (
     <div className='dropdown-container relative d-flex justify-center'>
       {isTooltipVisible && (
-        <span className='dropdown-tooltip absolute'>
-          Pour interragir avec un menu déroulant, pressez la touche "Entrer" en
-          l'ayant focus ou cliquer dessus.
+        <span
+          onClick={() => setIsTooltipVisible(false)}
+          className='dropdown-tooltip absolute'
+          aria-label='Astuce pour utiliser les menus déroulants au clavier.'
+        >
+          Pour interragir avec un menu déroulant, pressez la touche "Entrer" ou
+          "Espace" en l'ayant focus ou cliquer dessus.
         </span>
       )}
       <ul
@@ -43,13 +42,13 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
         <li
           className='dropdown-title relative'
           onClick={() => setIsOpen(!isOpen)}
-          onKeyDown={handleKeyDown}
-          tabIndex='0'
         >
-          {title}
+          <button aria-controls={title} onKeyDown={handleKeyDown}>
+            {title}
+          </button>
         </li>
         {isOpen && (
-          <li className='dropdown-content-container'>
+          <li className='dropdown-content-container' id={title}>
             <ul className='dropdown-content-list'>
               {list.map((el, i) => (
                 <li key={`${'dropdown-item-' + i}`}>

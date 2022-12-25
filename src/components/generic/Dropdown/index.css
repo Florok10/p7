@@ -8,11 +8,20 @@
 
 .dropdown-title {
   cursor: pointer;
-  color: #fff;
   background-color: #ff6060;
-  padding: 10px;
   border-radius: 5px;
   top: 6px;
+}
+
+.dropdown-title button {
+  background-color: unset;
+  border: none;
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: inherit;
+  padding: 10px;
+  text-align: left;
 }
 
 .dropdown-content-container {
@@ -22,4 +31,27 @@
 }
 
 .dropdown-tooltip {
+  top: -80px;
+  right: 0;
+  background-color: #f4f4f4;
+  z-index: 10;
+  padding: 10px;
+  font-size: clamp(10px, 1vw, 12px);
+  max-width: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-tooltip:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #f7f7f7;
+  transform: rotate(45deg);
+  bottom: -6px;
+  left: 12px;
+  z-index: 9;
+  border-radius: 10px 0px 0px 0px;
 }

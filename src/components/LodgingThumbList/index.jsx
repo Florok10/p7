@@ -11,6 +11,7 @@ const LodgingThumbList = ({ data }) => (
           className='thumbnail-link'
           title={lodging.title}
           src={lodging.cover}
+          ariaLabel="Open the lodging's page"
           alt={lodging.title}
           href={`${'/lodging/' + lodging.id}`}
         />

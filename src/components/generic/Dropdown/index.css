@@ -2,6 +2,27 @@
   color: #ff6060;
 }
 
+.arrow {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  transform: rotate(45deg);
+  right: 10px;
+  z-index: 2;
+}
+
+.arrow.arrow-up {
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  top: 18px;
+}
+
+.arrow.arrow-down {
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  top: 8px;
+}
+
 .dropdown {
   width: 100%;
 }

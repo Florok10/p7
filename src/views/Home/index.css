@@ -8,6 +8,7 @@
   color: #fff;
   position: absolute;
   font-size: clamp(18px, 4vw, 48px);
+  font-weight: 500;
   margin: auto;
   padding: 0 10px;
 }

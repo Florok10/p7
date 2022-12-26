@@ -9,13 +9,12 @@
 .header-nav {
   max-width: 1440px;
   gap: 20px;
-  justify-content: space-around;
+  row-gap: 10px;
+  width: 80vw;
 }
 
 .nav-logo {
   max-height: 54px;
-  max-width: max-content;
-  margin: auto;
 }
 
 .nav-logo img {
@@ -27,7 +26,6 @@
   list-style-type: none;
   padding: 0;
   gap: 20px;
-  margin: auto;
   text-transform: uppercase;
 }
 
@@ -36,21 +34,16 @@
 }
 
 .nav-links {
-  font-size: clamp(12px, 1.5vw, 24px);
+  font-size: clamp(12px, 2.5vw, 24px);
   font-weight: 500;
   color: #ff6060;
 }
 
 @media screen and (min-width: 768px) {
-  .header-nav {
-    justify-content: space-between;
-  }
   .nav-logo {
-    margin: auto auto auto 0;
     max-height: 68px;
   }
   .nav-list-wrapper {
-    margin: auto 0 auto auto;
     text-transform: unset;
   }
 }

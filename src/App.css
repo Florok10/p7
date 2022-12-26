@@ -7,18 +7,18 @@ body {
 }
 
 main {
-  margin: 24px auto;
   gap: clamp(20px, 5vw, 40px);
   width: min-content;
 }
 
 #root {
   min-height: 100vh;
+  row-gap: 24px;
 }
 
 [tabindex='0']:focus,
 a:focus,
 button:focus {
-  outline: solid 3px rgb(255, 96, 96);
+  outline: solid 3px #ff6060;
   outline-offset: 4px;
 }

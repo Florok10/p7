@@ -6,9 +6,6 @@
   border-radius: 10px;
 }
 
-.thumbnail-image-wrapper {
-}
-
 .thumbnail-image {
   object-fit: cover;
   width: 100%;
@@ -32,8 +29,9 @@
 .thumbnail-title {
   bottom: 0;
   z-index: 2;
-  margin: 10px;
+  margin: 20px;
   color: #fff;
   font-size: 18px;
+  font-weight: 500;
   line-height: 25.67px;
 }

@@ -24,7 +24,10 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
 
   return (
     <div className='dropdown-container relative d-flex justify-center'>
-      <span className={`arrow ${!isOpen ? 'arrow-down' : 'arrow-up'}`}></span>
+      <span
+        className={`arrow ${!isOpen ? 'arrow-down' : 'arrow-up'}`}
+        onClick={() => setIsOpen(!isOpen)}
+      ></span>
       {isTooltipVisible && (
         <span
           onClick={() => setIsTooltipVisible(false)}
@@ -35,11 +38,11 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
           "Espace" en l'ayant focus ou cliquer dessus.
         </span>
       )}
-      <ul className={`dropdown d-flex flex-column ${dropDownClassName || ''}`}>
-        <li
-          className='dropdown-title relative'
-          onClick={() => setIsOpen(!isOpen)}
-        >
+      <ul
+        className={`dropdown d-flex flex-column ${dropDownClassName || ''}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <li className='dropdown-title relative'>
           <button aria-controls={title} onKeyDown={handleKeyDown}>
             {title}
           </button>

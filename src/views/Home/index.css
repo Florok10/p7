@@ -1,5 +1,5 @@
 .home-top-image-container {
-  width: clamp(200px, 80vw, 1240px);
+  width: clamp(200px, 80vw, 1440px);
 }
 
 .home-top-image-container::before {
@@ -16,7 +16,4 @@
   max-width: 100%;
   min-height: 110px;
   border-radius: 10px;
-}
-
-@media screen and (min-width: 768px) {
 }

@@ -1,13 +1,13 @@
 .thumbnail-list {
   gap: clamp(20px, 5vw, 60px);
   border-radius: 25px;
-  width: clamp(200px, 80vw, 1240px);
+  width: clamp(200px, 80vw, 1440px);
   margin: auto;
 }
 
 .thumbnail-item {
-  width: clamp(200px, 20vw, 340px);
-  height: clamp(200px, 20vw, 340px);
+  width: clamp(200px, 20vw, calc((1440px / 3) - (60px / 2)));
+  height: clamp(200px, 20vw, calc((1440px / 3) - (60px / 2)));
   transition: transform 500ms ease-out;
   flex: auto;
 }
@@ -21,7 +21,7 @@
     box-sizing: border-box;
     background-color: #f6f6f6;
     padding: clamp(20px, 3vw, 50px);
-    max-width: 1240px;
+    max-width: 1440px;
   }
 }
 

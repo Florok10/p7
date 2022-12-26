@@ -9,7 +9,7 @@ const Home = () => (
   <>
     <div className='home-top-image-container relative d-flex align-center justify-center'>
       <img
-        className='home-top-image'
+        className='home-top-image flex-grow'
         src={homeImage}
         alt='Paysage rocheux en bord de mer.'
       />

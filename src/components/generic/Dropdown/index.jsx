@@ -24,10 +24,6 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
 
   return (
     <div className='dropdown-container relative d-flex justify-center'>
-      <span
-        className={`arrow ${!isOpen ? 'arrow-down' : 'arrow-up'}`}
-        onClick={() => setIsOpen(!isOpen)}
-      ></span>
       {isTooltipVisible && (
         <span
           onClick={() => setIsTooltipVisible(false)}
@@ -43,6 +39,10 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <li className='dropdown-title relative'>
+          <span
+            className={`arrow ${!isOpen ? 'arrow-down' : 'arrow-up'}`}
+            onClick={() => setIsOpen(!isOpen)}
+          ></span>
           <button aria-controls={title} onKeyDown={handleKeyDown}>
             {title}
           </button>

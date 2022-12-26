@@ -1,5 +1,5 @@
 .about-top-image-container {
-  width: clamp(200px, 80vw, 1240px);
+  width: clamp(200px, 80vw, 1440px);
 }
 
 .about-top-image {

@@ -6,8 +6,8 @@
 }
 
 .thumbnail-item {
-  width: clamp(200px, 20vw, calc((1440px / 3) - (60px / 2)));
-  height: clamp(200px, 20vw, calc((1440px / 3) - (60px / 2)));
+  width: clamp(200px, 22vw, calc((1440px / 4) + (60px / 2)));
+  height: clamp(200px, 22vw, calc((1440px / 4) + (60px / 2)));
   transition: transform 500ms ease-out;
   flex: auto;
 }
@@ -26,7 +26,4 @@
 }
 
 @media screen and (min-width: 1020px) {
-  .thumbnail-item {
-    flex: unset;
-  }
 }

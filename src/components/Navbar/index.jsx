@@ -27,7 +27,7 @@ const Navbar = () => (
               (isActive ? 'active ' : '') + 'nav-links'
             }
           >
-            <span>A propos</span>
+            <span>A Propos</span>
           </NavLink>
         </li>
       </ul>

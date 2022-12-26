@@ -36,6 +36,8 @@
 }
 
 .nav-links {
+  font-size: clamp(12px, 1.5vw, 24px);
+  font-weight: 500;
   color: #ff6060;
 }
 

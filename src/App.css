@@ -19,6 +19,6 @@ main {
 [tabindex='0']:focus,
 a:focus,
 button:focus {
-  outline: solid 3px rgb(75, 159, 255);
+  outline: solid 3px rgb(255, 96, 96);
   outline-offset: 4px;
 }

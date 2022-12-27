@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 
+import './index.css';
+
 const Tag = ({ className, content }) => (
   <span className={`tag ${className}`}>{content}</span>
 );

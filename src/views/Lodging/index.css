@@ -1,0 +1,42 @@
+h1 {
+  width: max-content;
+  font-weight: 500;
+  font-size: clamp(18px, 2.5vw, 36px);
+  line-height: 142%;
+  margin: 10px 0 0 0;
+}
+
+.lodging-figure {
+  gap: 15px;
+}
+
+.lodging-gallery {
+  width: clamp(200px, 80vw, 1440px);
+  height: clamp(125px, 60vw, 495px);
+}
+
+.lodging-infos {
+  color: #ff6060;
+}
+
+.lodging-location {
+  font-size: clamp(14px, 1.5vw, 18px);
+  font-weight: 500;
+}
+
+.host-container {
+  gap: 20px;
+}
+
+.host-name {
+  max-width: min-content;
+  text-align: right;
+  font-weight: 500;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+.host-picture {
+  max-width: 72px;
+  height: auto;
+  border-radius: 50%;
+}

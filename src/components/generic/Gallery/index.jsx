@@ -25,11 +25,13 @@ const Gallery = ({ alt, className, pictures }) => {
   );
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      handlePictureChange(1);
-    }, 5000);
+    const timeout =
+      pictures.length > 1 &&
+      setTimeout(() => {
+        handlePictureChange(1);
+      }, 5000);
     return () => clearTimeout(timeout);
-  }, [index, handlePictureChange]);
+  }, [index, handlePictureChange, pictures]);
 
   return (
     <div className={`gallery relative ${className || ''}`}>

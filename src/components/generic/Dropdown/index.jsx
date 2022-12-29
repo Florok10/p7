@@ -49,7 +49,7 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
         </li>
         {isOpen && (
           <li className='dropdown-content-container' id={title}>
-            <ul className='dropdown-content-list'>
+            <ul className='dropdown-content-list d-flex flex-column'>
               {list.map((el, i) => (
                 <li key={`${'dropdown-item-' + i}`}>
                   {el.href ? (

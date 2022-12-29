@@ -14,6 +14,7 @@ main {
 #root {
   min-height: 100vh;
   row-gap: 24px;
+  overflow-x: hidden;
 }
 
 [tabindex='0']:focus,

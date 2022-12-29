@@ -6,8 +6,8 @@
 }
 
 .thumbnail-item {
-  width: clamp(200px, 22vw, calc((1440px / 4) + (60px / 2)));
-  height: clamp(200px, 22vw, calc((1440px / 4) + (60px / 2)));
+  width: clamp(200px, 22vw, calc((1440px / 5)));
+  height: clamp(200px, 22vw, calc((1440px / 5)));
   transition: transform 500ms ease-out;
   flex: auto;
 }
@@ -23,7 +23,4 @@
     padding: clamp(20px, 3vw, 50px);
     max-width: 1440px;
   }
-}
-
-@media screen and (min-width: 1020px) {
 }

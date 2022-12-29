@@ -33,16 +33,20 @@ const Gallery = ({ alt, className, pictures }) => {
 
   return (
     <div className={`gallery relative ${className || ''}`}>
-      <button
-        aria-controls='gallery-img'
-        className='gallery-controls prev'
-        onClick={() => handlePictureChange(-1)}
-      ></button>
-      <button
-        aria-controls='gallery-img'
-        className='gallery-controls next'
-        onClick={() => handlePictureChange(1)}
-      ></button>
+      {pictures.length > 1 && (
+        <>
+          <button
+            aria-controls='gallery-img'
+            className='gallery-controls prev'
+            onClick={() => handlePictureChange(-1)}
+          ></button>
+          <button
+            aria-controls='gallery-img'
+            className='gallery-controls next'
+            onClick={() => handlePictureChange(1)}
+          ></button>
+        </>
+      )}
       <img id='gallery-img' src={pictures[index]} alt={alt} />
     </div>
   );

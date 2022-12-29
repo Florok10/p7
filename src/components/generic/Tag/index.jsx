@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import './index.css';
 
 const Tag = ({ className, content }) => (
-  <span className={`tag ${className}`}>{content}</span>
+  <strong
+    className={`tag d-flex align-center justify-center ${className || ''}`}
+  >
+    {content}
+  </strong>
 );
 
 Tag.propTypes = {

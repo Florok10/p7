@@ -1,5 +1,4 @@
 h1 {
-  width: max-content;
   font-weight: 500;
   font-size: clamp(18px, 2.5vw, 36px);
   line-height: 142%;
@@ -15,8 +14,10 @@ h1 {
   height: clamp(125px, 60vw, 495px);
 }
 
-.lodging-infos {
+.lodging-title-tags {
   color: #ff6060;
+  gap: 17px;
+  row-gap: 0px;
 }
 
 .lodging-location {
@@ -24,19 +25,55 @@ h1 {
   font-weight: 500;
 }
 
+.lodging-host-infos {
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
 .host-container {
-  gap: 20px;
+  gap: 10px;
+  order: 2;
 }
 
 .host-name {
   max-width: min-content;
   text-align: right;
   font-weight: 500;
-  font-size: clamp(14px, 2vw, 18px);
+  font-size: clamp(12px, 2vw, 18px);
 }
 
 .host-picture {
-  max-width: 72px;
+  width: clamp(38px, 8vw, 72px);
   height: auto;
   border-radius: 50%;
+}
+
+.star-list {
+  order: 1;
+}
+
+.lodging-dropdown-list {
+  gap: 40px;
+  row-gap: 20px;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 992px) {
+  .lodging-dropdown-item {
+    max-width: 47%;
+  }
+  .lodging-host-infos {
+    flex-direction: column;
+    flex-grow: unset;
+    justify-content: unset;
+  }
+  .lodging-dropdown-list {
+    flex-direction: row;
+  }
+  .star-list {
+    order: 2;
+  }
+  .host-container {
+    order: 1;
+  }
 }

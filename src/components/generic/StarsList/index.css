@@ -1,0 +1,11 @@
+.star-svg {
+  width: clamp(24px, 5vw, 32px);
+}
+
+.star {
+  fill: #e3e3e3;
+}
+
+.star.active {
+  fill: #ff6060;
+}

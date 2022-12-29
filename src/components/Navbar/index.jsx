@@ -14,7 +14,7 @@ const Navbar = () => (
           <NavLink
             to='/'
             className={({ isActive }) =>
-              (isActive ? 'active ' : '') + 'nav-links'
+              (isActive ? 'active ' : '') + 'nav-links medium'
             }
           >
             <span>Accueil</span>
@@ -24,7 +24,7 @@ const Navbar = () => (
           <NavLink
             to='/about'
             className={({ isActive }) =>
-              (isActive ? 'active ' : '') + 'nav-links'
+              (isActive ? 'active ' : '') + 'nav-links medium'
             }
           >
             <span>A Propos</span>

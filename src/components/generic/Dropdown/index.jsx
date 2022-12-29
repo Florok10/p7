@@ -43,7 +43,11 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
             className={`arrow ${!isOpen ? 'arrow-down' : 'arrow-up'}`}
             onClick={() => setIsOpen(!isOpen)}
           ></span>
-          <button aria-controls={title} onKeyDown={handleKeyDown}>
+          <button
+            className='medium'
+            aria-controls={title}
+            onKeyDown={handleKeyDown}
+          >
             {title}
           </button>
         </li>

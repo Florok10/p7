@@ -8,7 +8,7 @@ const Thumbnail = ({ alt, ariaLabel, className, href, src, title }) => (
     href={href}
     aria-label={ariaLabel}
   >
-    <strong className='thumbnail-title absolute'>{title}</strong>
+    <strong className='thumbnail-title medium absolute'>{title}</strong>
     <div className='thumbnail-image-wrapper relative'>
       <img className='thumbnail-image relative' src={src} alt={alt} />
     </div>

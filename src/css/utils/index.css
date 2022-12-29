@@ -172,6 +172,10 @@
   font-weight: 400;
 }
 
+.medium {
+  font-weight: 500;
+}
+
 .light-bold {
   font-weight: 600;
 }

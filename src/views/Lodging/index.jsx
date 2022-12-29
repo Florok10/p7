@@ -28,7 +28,7 @@ const Lodging = () => {
           />
           <div className='lodging-title-tags d-flex align-center justify-between flex-grow'>
             <div>
-              <figcaption className='d-flex flex-column'>
+              <figcaption className='d-flex flex-column medium'>
                 <h1>{lodging.title}</h1>
                 <span className='lodging-location'>{lodging.location}</span>
               </figcaption>
@@ -36,7 +36,7 @@ const Lodging = () => {
             </div>
             <div className='lodging-host-infos d-flex'>
               <div className='host-container d-flex align-center justify-end'>
-                <span className='host-name'>{host.name}</span>
+                <span className='host-name medium'>{host.name}</span>
                 <img
                   className='host-picture'
                   src={host.picture}

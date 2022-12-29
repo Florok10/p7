@@ -3,7 +3,6 @@
   padding: 2px clamp(14px, 2vw, 20px);
   background-color: #ff6060;
   color: #fff;
-  font-weight: 500;
   font-size: clamp(10px, 1vw, 14px);
   min-width: 84px;
 }

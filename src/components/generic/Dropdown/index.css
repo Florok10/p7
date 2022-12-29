@@ -44,7 +44,6 @@
   padding: 10px;
   text-align: left;
   font-size: clamp(13px, 1.5vw, 24px);
-  font-weight: 500;
 }
 
 .dropdown-content-container {

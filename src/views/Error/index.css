@@ -5,7 +5,6 @@
 
 .error-code {
   font-size: clamp(42px, 30vw, 290px);
-  font-weight: 700;
 }
 
 .error-message {

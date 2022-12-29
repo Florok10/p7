@@ -1,8 +1,8 @@
 h1 {
-  font-weight: 500;
   font-size: clamp(18px, 2.5vw, 36px);
   line-height: 142%;
   margin: 10px 0 0 0;
+  font-weight: inherit;
 }
 
 .lodging-figure {
@@ -22,7 +22,6 @@ h1 {
 
 .lodging-location {
   font-size: clamp(14px, 1.5vw, 18px);
-  font-weight: 500;
 }
 
 .lodging-host-infos {
@@ -38,7 +37,6 @@ h1 {
 .host-name {
   max-width: min-content;
   text-align: right;
-  font-weight: 500;
   font-size: clamp(12px, 2vw, 18px);
 }
 

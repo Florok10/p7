@@ -4,7 +4,9 @@ import './index.css';
 
 const Tag = ({ className, content }) => (
   <strong
-    className={`tag d-flex align-center justify-center ${className || ''}`}
+    className={`tag medium d-flex align-center justify-center ${
+      className || ''
+    }`}
   >
     {content}
   </strong>

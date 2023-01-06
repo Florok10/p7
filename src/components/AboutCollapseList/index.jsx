@@ -1,9 +1,9 @@
-import Dropdown from '../generic/Dropdown';
+import Collapse from '../generic/Collapse';
 
 import './index.css';
 
-const AboutDropdownList = () => {
-  const dropdownProps = [
+const AboutCollapseList = () => {
+  const collapseProps = [
     {
       title: 'Fiabilité',
       list: [
@@ -42,14 +42,14 @@ const AboutDropdownList = () => {
     },
   ];
   return (
-    <ul className='dropdown-list d-flex flex-column align-center flex-auto'>
-      {dropdownProps.map(({ title, list }) => (
-        <li className='dropdown-list-item' key={title}>
-          <Dropdown title={title} list={list} />
+    <ul className='collapse-list d-flex flex-column align-center flex-auto'>
+      {collapseProps.map(({ title, list }) => (
+        <li className='collapse-list-item' key={title}>
+          <Collapse title={title} list={list} />
         </li>
       ))}
     </ul>
   );
 };
 
-export default AboutDropdownList;
+export default AboutCollapseList;

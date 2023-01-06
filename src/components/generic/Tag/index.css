@@ -1,5 +1,5 @@
 .tag {
-  border-radius: clamp(3px, 0.5vw, 10px);
+  border-radius: clamp(5px, 0.5vw, 10px);
   padding: 2px clamp(14px, 2vw, 20px);
   background-color: #ff6060;
   color: #fff;

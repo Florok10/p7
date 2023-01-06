@@ -50,14 +50,14 @@ h1 {
   order: 1;
 }
 
-.lodging-dropdown-list {
+.lodging-collapse-list {
   gap: 40px;
   row-gap: 20px;
   flex-direction: column;
 }
 
 @media screen and (min-width: 992px) {
-  .lodging-dropdown-item {
+  .lodging-collapse-item {
     max-width: 47%;
   }
   .lodging-host-infos {
@@ -65,7 +65,7 @@ h1 {
     flex-grow: unset;
     justify-content: unset;
   }
-  .lodging-dropdown-list {
+  .lodging-collapse-list {
     flex-direction: row;
   }
   .star-list {

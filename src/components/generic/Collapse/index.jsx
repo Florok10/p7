@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './index.css';
 
-const Dropdown = ({ dropDownClassName, list, title }) => {
+const Collapse = ({ collapseClassName, list, title }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isTooltipVisible, setIsTooltipVisible] = useState(false);
 
@@ -23,11 +23,11 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
   }, [isTooltipVisible]);
 
   return (
-    <div className='dropdown-container relative d-flex justify-center'>
+    <section className='collapse-container relative d-flex justify-center'>
       {isTooltipVisible && (
         <span
           onClick={() => setIsTooltipVisible(false)}
-          className='dropdown-tooltip absolute'
+          className='collapse-tooltip absolute'
           aria-label='Astuce pour utiliser les menus déroulants au clavier.'
         >
           Pour interragir avec un menu déroulant, pressez la touche "Entrer" ou
@@ -35,10 +35,10 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
         </span>
       )}
       <ul
-        className={`dropdown d-flex flex-column ${dropDownClassName || ''}`}
+        className={`collapse d-flex flex-column ${collapseClassName || ''}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <li className='dropdown-title relative'>
+        <li className='collapse-title relative'>
           <span
             className={`arrow ${!isOpen ? 'arrow-down' : 'arrow-up'}`}
             onClick={() => setIsOpen(!isOpen)}
@@ -52,16 +52,16 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
           </button>
         </li>
         {isOpen && (
-          <li className='dropdown-content-container' id={title}>
-            <ul className='dropdown-content-list d-flex flex-column'>
+          <li className='collapse-content-container' id={title}>
+            <ul className='collapse-content-list d-flex flex-column'>
               {list.map((el, i) => (
-                <li key={`${'dropdown-item-' + i}`}>
+                <li key={`${'collapse-item-' + i}`}>
                   {el.href ? (
-                    <a className='dropdown-content' href={el.href}>
+                    <a className='collapse-content' href={el.href}>
                       {el.content}
                     </a>
                   ) : (
-                    <span className='dropdown-content'>{el.content}</span>
+                    <span className='collapse-content'>{el.content}</span>
                   )}
                 </li>
               ))}
@@ -69,12 +69,12 @@ const Dropdown = ({ dropDownClassName, list, title }) => {
           </li>
         )}
       </ul>
-    </div>
+    </section>
   );
 };
 
-Dropdown.propTypes = {
-  dropDownClassName: PropTypes.string,
+Collapse.propTypes = {
+  collapseClassName: PropTypes.string,
   list: PropTypes.arrayOf(
     PropTypes.shape({
       content: PropTypes.any.isRequired,
@@ -84,4 +84,4 @@ Dropdown.propTypes = {
   title: PropTypes.string,
 };
 
-export default Dropdown;
+export default Collapse;

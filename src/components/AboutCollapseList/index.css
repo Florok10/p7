@@ -1,9 +1,9 @@
-.dropdown-list {
+.collapse-list {
   gap: 20px;
   width: 100%;
   max-width: 1250px;
 }
 
-.dropdown-list-item {
+.collapse-list-item {
   width: 100%;
 }

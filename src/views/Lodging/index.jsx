@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-import Dropdown from './../../components/generic/Dropdown';
+import Collapse from './../../components/generic/Collapse';
 import Gallery from '../../components/generic/Gallery';
 import StarsList from '../../components/generic/StarsList';
 import TagList from '../../components/generic/TagList';
@@ -48,9 +48,9 @@ const Lodging = () => {
           </div>
         </figure>
       </article>
-      <ul className='lodging-dropdown-list d-flex width-100'>
-        <li className='lodging-dropdown-item flex-grow'>
-          <Dropdown
+      <ul className='lodging-collapse-list d-flex width-100'>
+        <li className='lodging-collapse-item flex-grow'>
+          <Collapse
             title='Description'
             list={[
               {
@@ -59,8 +59,8 @@ const Lodging = () => {
             ]}
           />
         </li>
-        <li className='lodging-dropdown-item flex-grow'>
-          <Dropdown
+        <li className='lodging-collapse-item flex-grow'>
+          <Collapse
             title='Équipements'
             list={lodging.equipments.map((el) => ({ content: el }))}
           />

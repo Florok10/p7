@@ -1,4 +1,4 @@
-import AboutDropdownList from '../../components/AboutDropdownList';
+import AboutCollapseList from '../../components/AboutCollapseList';
 
 import './index.css';
 
@@ -13,7 +13,7 @@ const About = () => (
         alt='Paysage montagneux.'
       />
     </div>
-    <AboutDropdownList />
+    <AboutCollapseList />
   </>
 );
 

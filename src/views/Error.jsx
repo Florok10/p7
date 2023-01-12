@@ -1,4 +1,4 @@
-import './index.css';
+import '../css/views/error.css';
 
 const Error = () => (
   <div className='padding'>

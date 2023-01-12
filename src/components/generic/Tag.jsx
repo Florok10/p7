@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import './index.css';
+import '../../css/components/generic/tag.css';
 
 const Tag = ({ className, content }) => (
   <strong

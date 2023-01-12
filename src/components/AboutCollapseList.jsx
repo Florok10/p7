@@ -1,6 +1,6 @@
-import Collapse from '../generic/Collapse';
+import Collapse from './generic/Collapse';
 
-import './index.css';
+import '../css/components/aboutCollapseList.css';
 
 const AboutCollapseList = () => {
   const collapseProps = [

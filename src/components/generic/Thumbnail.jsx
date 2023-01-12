@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import './index.css';
+import '../../css/components/generic/thumbnail.css';
 
 const Thumbnail = ({ alt, ariaLabel, className, href, src, title }) => (
   <a

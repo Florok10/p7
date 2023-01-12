@@ -1,9 +1,10 @@
-import data from '../../data';
-import './index.css';
+import data from '../data';
 
-import LodgingThumbList from '../../components/LodgingThumbList';
+import LodgingThumbList from '../components/LodgingThumbList';
 
-import homeImage from '../../assets/home_top_image.png';
+import homeImage from '../assets/home_top_image.png';
+
+import '../css/views/home.css';
 
 const Home = () => (
   <>

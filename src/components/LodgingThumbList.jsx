@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
-import './index.css';
 
-import Thumbnail from '../generic/Thumbnail';
+import Thumbnail from './generic/Thumbnail';
+
+import '../css/components/lodgingThumbList.css';
 
 const LodgingThumbList = ({ data }) => (
   <ul className='thumbnail-list d-flex justify-center'>

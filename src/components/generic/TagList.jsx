@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-import Tag from '../Tag';
+import Tag from './Tag';
 
-import './index.css';
+import '../../css/components/generic/tagList.css';
 
 const TagList = ({ tags, className }) => (
   <ul className={`tag-list d-flex ${className || ''}`}>

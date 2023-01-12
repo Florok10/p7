@@ -1,14 +1,14 @@
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-import Collapse from './../../components/generic/Collapse';
-import Gallery from '../../components/generic/Gallery';
-import StarsList from '../../components/generic/StarsList';
-import TagList from '../../components/generic/TagList';
+import Collapse from './../components/generic/Collapse';
+import Gallery from '../components/generic/Gallery';
+import StarsList from '../components/generic/StarsList';
+import TagList from '../components/generic/TagList';
 
-import data from '../../data';
+import data from '../data';
 
-import './index.css';
+import '../css/views/lodging.css';
 
 const Lodging = () => {
   const { id } = useParams();

@@ -1,7 +1,8 @@
 import { Link, NavLink } from 'react-router-dom';
 
-import logo from '../../assets/LOGO.png';
-import './index.css';
+import logo from '../assets/LOGO.png';
+
+import '../css/components/navbar.css';
 
 const Navbar = () => (
   <header className='page-header'>

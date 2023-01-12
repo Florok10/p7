@@ -1,7 +1,6 @@
-import React from 'react';
-import logo from '../../assets/LOGO_FOOTER.png';
+import logo from '../assets/LOGO_FOOTER.png';
 
-import './index.css';
+import '../css/components/footer.css';
 
 const Footer = () => (
   <footer className='page-footer d-flex flex-column justify-center align-center text-center'>

@@ -1,6 +1,6 @@
-import './index.css';
-
 import PropTypes from 'prop-types';
+
+import '../../css/components/generic/starList.css';
 
 const StarsList = ({ className, stars }) => {
   stars =

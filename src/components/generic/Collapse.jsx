@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
-import './index.css';
+import '../../css/components/generic/collapse.css';
 
 const Collapse = ({ collapseClassName, list, title }) => {
   const [isOpen, setIsOpen] = useState(false);

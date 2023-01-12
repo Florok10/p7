@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 
-import './index.css';
+import '../../css/components/generic/gallery.css';
 
 const Gallery = ({ alt, className, pictures }) => {
   const [index, setIndex] = useState(0);

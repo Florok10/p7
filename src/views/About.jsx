@@ -1,8 +1,8 @@
-import AboutCollapseList from '../../components/AboutCollapseList';
+import AboutCollapseList from '../components/AboutCollapseList';
 
-import './index.css';
+import aboutImage from '../assets/about_top_image.png';
 
-import aboutImage from '../../assets/about_top_image.png';
+import '../css/views/about.css';
 
 const About = () => (
   <>

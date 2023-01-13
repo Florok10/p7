@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import '../../css/components/generic/tag.css';
 
 const Tag = ({ className, content }) => (
-  <strong
+  <span
     className={`tag medium d-flex align-center justify-center ${
       className || ''
     }`}
   >
     {content}
-  </strong>
+  </span>
 );
 
 Tag.propTypes = {

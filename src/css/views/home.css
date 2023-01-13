@@ -1,20 +1,29 @@
 .home-top-image-container {
   width: clamp(200px, 80vw, 1440px);
+  justify-content: flex-start;
 }
 
-.home-top-image-container::before {
-  content: 'Chez vous, partout et ailleurs.';
-  display: block;
+.home-title {
   color: #fff;
+  flex-direction: column;
   position: absolute;
   font-size: clamp(18px, 4vw, 48px);
   font-weight: 500;
   margin: auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .home-top-image {
   max-width: 100%;
   min-height: 110px;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .home-top-image-container {
+    justify-content: center;
+  }
+  .home-title {
+    flex-direction: row;
+  }
 }

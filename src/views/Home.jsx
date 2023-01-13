@@ -8,7 +8,11 @@ import '../css/views/home.css';
 
 const Home = () => (
   <>
-    <div className='home-top-image-container relative d-flex align-center justify-center'>
+    <div className='home-top-image-container relative d-flex align-center'>
+      <h1 className='home-title d-flex'>
+        <span>Chez vous,&nbsp;</span>
+        <span>partout et ailleurs.</span>
+      </h1>
       <img
         className='home-top-image flex-grow'
         src={homeImage}

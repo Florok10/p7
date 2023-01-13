@@ -6,6 +6,10 @@
   border-radius: 10px;
 }
 
+.thumbnail-image-wrapper {
+  margin: 0;
+}
+
 .thumbnail-image {
   object-fit: cover;
   width: 100%;

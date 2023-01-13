@@ -8,10 +8,12 @@ const Thumbnail = ({ alt, ariaLabel, className, href, src, title }) => (
     href={href}
     aria-label={ariaLabel}
   >
-    <h2 className='thumbnail-title medium absolute'>{title}</h2>
-    <div className='thumbnail-image-wrapper relative'>
+    <figure className='thumbnail-image-wrapper relative'>
       <img className='thumbnail-image relative' src={src} alt={alt} />
-    </div>
+      <figcaption>
+        <h2 className='thumbnail-title medium absolute'>{title}</h2>
+      </figcaption>
+    </figure>
   </a>
 );
 

@@ -10,8 +10,9 @@ const Gallery = ({ alt, className, pictures }) => {
   const handlePictureChange = useCallback(
     (number) => {
       const definedNumber = Math.sign(number);
-      if (isNaN(definedNumber) || definedNumber === 0)
-        throw new Error('Given number is NaN');
+      if (isNaN(definedNumber) || definedNumber === 0) {
+        throw new Error('Given number is a valid number');
+      }
       const isIndexZero = index === 0;
       const isLastIndex = index === maxIndex;
       if (definedNumber === 1) {
@@ -34,7 +35,7 @@ const Gallery = ({ alt, className, pictures }) => {
   }, [index, handlePictureChange, pictures]);
 
   return (
-    <div className={`gallery relative ${className || ''}`}>
+    <figure className={`gallery relative margin-auto ${className || ''}`}>
       {pictures.length > 1 && (
         <>
           <button
@@ -50,7 +51,7 @@ const Gallery = ({ alt, className, pictures }) => {
         </>
       )}
       <img id='gallery-img' src={pictures[index]} alt={alt} />
-    </div>
+    </figure>
   );
 };
 

@@ -23,7 +23,7 @@ const Collapse = ({ collapseClassName, list, title }) => {
   }, [isTooltipVisible]);
 
   return (
-    <section className='collapse-container relative d-flex justify-center'>
+    <div className='collapse-container relative d-flex justify-center flex-grow'>
       {isTooltipVisible && (
         <span
           onClick={() => setIsTooltipVisible(false)}
@@ -34,11 +34,11 @@ const Collapse = ({ collapseClassName, list, title }) => {
           "Espace" en l'ayant focus ou cliquer dessus.
         </span>
       )}
-      <ul
+      <section
         className={`collapse d-flex flex-column ${collapseClassName || ''}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <li className='collapse-title relative'>
+        <div className='collapse-title relative'>
           <span
             className={`arrow ${!isOpen ? 'arrow-down' : 'arrow-up'}`}
             onClick={() => setIsOpen(!isOpen)}
@@ -50,26 +50,30 @@ const Collapse = ({ collapseClassName, list, title }) => {
           >
             {title}
           </button>
-        </li>
+        </div>
         {isOpen && (
-          <li className='collapse-content-container' id={title}>
-            <ul className='collapse-content-list d-flex flex-column'>
-              {list.map((el, i) => (
-                <li key={`${'collapse-item-' + i}`}>
-                  {el.href ? (
-                    <a className='collapse-content' href={el.href}>
-                      {el.content}
-                    </a>
-                  ) : (
-                    <span className='collapse-content'>{el.content}</span>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </li>
+          <div className='collapse-content-container flex-grow' id={title}>
+            {list.length > 1 ? (
+              <ul className='collapse-content-list d-flex flex-column margin-0'>
+                {list.map((el, i) => (
+                  <li key={`${'collapse-item-' + i}`}>
+                    {el.href ? (
+                      <a className='collapse-content' href={el.href}>
+                        {el.content}
+                      </a>
+                    ) : (
+                      <span className='collapse-content'>{el.content}</span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className='margin-0'>{list[0].content}</p>
+            )}
+          </div>
         )}
-      </ul>
-    </section>
+      </section>
+    </div>
   );
 };
 

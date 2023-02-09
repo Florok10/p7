@@ -48,6 +48,9 @@ const Gallery = ({ alt, className, pictures }) => {
             className='gallery-controls next'
             onClick={() => handlePictureChange(1)}
           ></button>
+          <span className='gallery-index absolute medium text-center'>
+            {index + 1} / {pictures.length}
+          </span>
         </>
       )}
       <img id='gallery-img' src={pictures[index]} alt={alt} />
